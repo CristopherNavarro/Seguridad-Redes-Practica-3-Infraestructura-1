@@ -1,0 +1,42 @@
+================================================================================
+INSTITUTO TECNOLÓGICO DE LAS AMÉRICAS (ITLA)
+ASIGNATURA: SEGURIDAD DE REDES
+DOCENTE: JONATHAN ESTEBAN RONDÓN CORNIEL
+================================================================================
+
+DATOS DEL ESTUDIANTE:
+--------------------------------------------------------------------------------
+Nombre: Cristopher Navarro
+Matrícula: 2025-0720
+Asignación: Tarea Semana 4 (Práctica 3)
+Módulo: Infraestructura 1 - Segmentación LAN, Servidores DMZ y Endurecimiento
+
+ENLACES OFICIALES DE ENTREGA:
+--------------------------------------------------------------------------------
+Enlace del Repositorio de GitHub:
+https://github.com/CristopherNavarro/Seguridad-Redes-Practica-3-Infraestructura-1
+
+Enlace del Video Demostrativo (YouTube):
+https://youtu.be/IGhLNJzng0I
+
+DETALLES DE LA DEMOSTRACIÓN EN VIDEO:
+--------------------------------------------------------------------------------
+- Duración: Menor a 10 minutos.
+- Requisitos en pantalla: Rostro, voz audible, fecha y hora visibles durante la grabación.
+- Enfoque técnico: Demostración estricta y funcional del cumplimiento de los objetivos de seguridad:
+  1. Direccionamiento IP basado en matrícula (10.25.7.0/25, 10.25.8.0/25, 10.25.9.0/28).
+  2. Arrendamiento dinámico DHCP en VLAN 10 y VLAN 20 desde FortiGate.
+  3. Políticas de firewall en FortiGate:
+     - VLAN 10 bloqueada hacia Web Inventario (puerto 80).
+     - VLAN 10 con acceso permitido a Web Caja (puerto 80).
+     - VLAN 20 con acceso exclusivo SSH hacia servidores DMZ (Web Caja, Web Inventario, DB).
+     - VLAN 10 con acceso SSH bloqueado hacia servidores DMZ.
+     - Bloqueo estricto de inicio de conexiones / fuga de tráfico desde DMZ hacia LAN.
+     - Salida controlada de DMZ a Internet solo para actualizaciones.
+  4. Seguridad Layer 2 en Switches Cisco IOSvL2 (SW1 y SW2):
+     - Port-Security con Sticky MAC y violación restrict.
+     - Spanning-Tree PortFast y BPDU Guard activados en puertos de acceso.
+     - VLAN Nativa dedicada (VLAN 99) en enlaces troncales 802.1Q.
+     - Puertos no utilizados aislados en VLAN Blackhole (VLAN 999) y en estado administrativo Shutdown.
+
+================================================================================
