@@ -180,7 +180,6 @@ Dentro de este repositorio se encuentran todos los archivos fuente generados en 
 * **Running-Config SW1 (Cisco LAN):** [`configs/SW1_running_config.txt`](configs/SW1_running_config.txt)
 * **Running-Config SW2 (Cisco DMZ):** [`configs/SW2_running_config.txt`](configs/SW2_running_config.txt)
 * **Configuración Completa FortiGate:** [`configs/FortiGate_running_config.txt`](configs/FortiGate_running_config.txt)
-* **Scripts de Automatización y Auditoría:** Directorio [`scripts/`](scripts/) con los módulos de aprovisionamiento y pruebas funcionales.
 
 ---
 
